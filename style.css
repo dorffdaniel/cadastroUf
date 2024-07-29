@@ -1,0 +1,108 @@
+body{
+    background-color: black;
+}
+main h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    height: 400px;
+    background-image: linear-gradient(to bottom, #242824, #fefefe);
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.user input{
+    height: 42px;
+    font-size: 25px;
+    width: 250px;
+}
+
+.user button{
+    width: 120px;
+    height: 40px;
+    background-color: #124dff;
+    cursor: pointer;
+    color: #fefefe;
+    font-size: 20px;
+
+}
+
+.mensuser{
+    display: none;
+    font-size: 23px;
+    width: 150px;
+    margin: 0px 10px;
+    text-align: center;
+    background-color: rgb(255, 13, 0);
+    color: aliceblue;
+}
+
+.personagem{
+    margin-right: 30px;
+}
+
+.personagem img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    margin-right: 50px;
+}
+
+.btns button{
+    border-radius: 8px;
+    width: 100px;
+    height: 35px;
+    font-size: 23px;
+    background: rgb(9, 9, 72);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+.btns button:hover{
+    background-color: #124dff;
+}
+
+.resultado{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.resultado img{
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+}
+
+.resultado #resulmal{
+    width: 400px;
+    font-size: 35px;
+}
+
+.resultado #resulbom{
+    width: 400px;
+    font-size: 35px;
+}
