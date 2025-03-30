@@ -1,108 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
 body{
-    background-color: black;
-}
-main h1{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    align-items: center;
-    height: 400px;
-    background-image: linear-gradient(to bottom, #242824, #fefefe);
-}
-
-.user{
-    display: flex;
     flex-direction: column;
-    margin-right: 25px;
-    font-size: 20px;
-    gap: 20px;
+    align-items: center;
+    padding: 1em;
 }
 
-.user input{
-    height: 42px;
-    font-size: 25px;
-    width: 250px;
+.conteudos{
+    display: flex;
+    justify-content: start;
+    gap: 1.5em;
+    margin-bottom: 2em;
+    width: 25em;
 }
 
-.user button{
-    width: 120px;
-    height: 40px;
-    background-color: #124dff;
+.conteudos button{
+    padding: .5em;
+    background:#ccc;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
     cursor: pointer;
-    color: #fefefe;
-    font-size: 20px;
-
 }
 
-.mensuser{
+.conteudos button:focus{
+    background: #0e0ba8;
+}
+
+hr{
+    width: 50%;
+    margin: 2em;
+}
+
+.tudo{
+    display: flex;
+}
+
+.cards{
     display: none;
-    font-size: 23px;
-    width: 150px;
-    margin: 0px 10px;
+    justify-content: start;
+    width: 40em;
+    align-items: center;
+    height: 4em;
+    gap: 1em;
+}
+
+.cards input{
+    height: 1.5em;
+    border-radius: .3em;
+    padding-left: .5em;
+    border: 1px solid #524f4f;
+}
+
+.cards button{
+    height: 1.8em;
+    background: #0d56a8;
+    color: #fff;
+    padding: .5em;
     text-align: center;
-    background-color: rgb(255, 13, 0);
-    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-radius: .5em;
 }
 
-.personagem{
-    margin-right: 30px;
+.mostrar{
+    display: flex;
 }
 
-.personagem img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.btns{
+.campoCadastro{
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-    margin-right: 50px;
+    gap: 1em;
 }
 
-.btns button{
-    border-radius: 8px;
-    width: 100px;
-    height: 35px;
-    font-size: 23px;
-    background: rgb(9, 9, 72);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-
+.campoCadastro h2{
+    color: #266906;
 }
 
-.btns button:hover{
-    background-color: #124dff;
+.campoCadastro p{
+    font-weight: 900;
+    font-size: 1.3em;
 }
 
-.resultado{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-
-.resultado img{
-    border-radius: 8px;
-    width: 200px;
-    height: 200px;
-}
-
-.resultado #resulmal{
-    width: 400px;
-    font-size: 35px;
-}
-
-.resultado #resulbom{
-    width: 400px;
-    font-size: 35px;
+.campoCadastro span{
+    font-weight: 500;
+    color: #524f4f;
+    border-bottom: 1px solid #1d1d1d;
 }

@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastrar informaçao</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>escolha o lado certo </h1>
-        <div class="container">
-            <div class="user">
-                <h2>qual o seu nome ?</h2>
-                <input type="text" id="txt">
-                <button onclick="botao()">confirma</button>
-            </div>
-            <div id="mensuser" class="mensuser">
+    <div class="conteudos">
+        
+        <button class="ativo" onclick="btn(0)">UFCD</button>
+        <button onclick="btn(1)">Nome</button>
+        <button onclick="btn(2)">Cadastro</button>
+    </div>
+    <hr>
+    <div class="tudo">
+        <div class="cards mostrar">
+            <label for="ufcd">UFCD:</label>
+            <input type="number" name="" id="ufcd" placeholder="ufcd" min="0">
+            <label for="codigo">CODIGO:</label>
+            <input type="number" id="codigo" placeholder="codigo" min="0">
+            <button onclick="enviarUfcd()">enviar</button>
+        </div>
+        <div class="cards">
+            <label for="nome">NOME:</label>
+            <input type="text" name="" id="nome" placeholder="nome">
+            <button onclick="enviarNome()">enviar</button>
+        </div>
+        <div class="cards">
+            <div class="campoCadastro">
+                <h2>cadastro concluido</h2>
 
-            </div>
-            <div class="personagem">
-                <img src="perso.jpg" alt="">
-            </div>
-            <div class="btns">
-                <button onclick="clicar()">Lado A</button>
-                <button onclick="clica()">lado B</button>
-            </div>
-            <div class="resultado">
-                <p id="res"></p>
-                <p id="resulmal"></p>
-                <p id="rescimg"></p>
-                <p id="resulbom"></p>
+                <p>sua UFCD é: <span class="resUfcd"></span></p>
+                <p>seu Codigo é: <span class="resCodigo"></span></p>
+                <p>nome: <span class="resNome"></span></p>
             </div>
         </div>
-    </main>
-    <script src="index.js"></script>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
