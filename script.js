@@ -17,6 +17,12 @@ function enviarUfcd(){
     let ufcd = document.getElementById('ufcd');
     let codigo = document.getElementById('codigo');
 
+    Swal.fire({
+        title: "Bom trabalho",
+        text: "Arquivos enviados com sucesso",
+        icon: "success"
+      });
+
 //poderia ter colocado o value na varial, mas nao deixaria limpar o campo depois
 
     resUfcd.innerHTML= ufcd.value;
@@ -30,6 +36,12 @@ let resNome = document.querySelector('.resNome');
 
 function enviarNome(){
     let nome = document.getElementById('nome');
+
+    Swal.fire({
+        title: "Bom trabalho",
+        text: "Arquivo enviado com sucesso",
+        icon: "success"
+      });
 
     resNome.innerHTML = nome.value;
 
