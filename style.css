@@ -95,3 +95,8 @@ hr{
     color: #524f4f;
     border-bottom: 1px solid #1d1d1d;
 }
+
+.botoes.ativado{
+    background: #0e0ba8;
+    transition: all ease .5s;
+}

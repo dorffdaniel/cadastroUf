@@ -1,5 +1,18 @@
-let cards = document.querySelectorAll('.cards')
+const botoes = document.querySelectorAll('.botoes');
 
+botoes.forEach((event)=>{
+    event.addEventListener('click', ()=>{
+        botoes.forEach((itens)=>{
+            itens.classList.remove('ativado');
+        })
+
+        event.classList.add('ativado')
+    })
+
+})
+
+
+let cards = document.querySelectorAll('.cards');
 
 function btn(index){
     cards.forEach((evento)=>{
