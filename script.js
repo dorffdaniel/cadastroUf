@@ -33,7 +33,11 @@ function enviarUfcd(){
     Swal.fire({
         title: "Bom trabalho",
         text: "Arquivos enviados com sucesso",
-        icon: "success"
+        icon: "success",
+        customClass: {
+            title: 'swal2-title',
+            popup: 'swal2-content'
+          }
       });
 
 //poderia ter colocado o value na varial, mas nao deixaria limpar o campo depois
@@ -53,7 +57,11 @@ function enviarNome(){
     Swal.fire({
         title: "Bom trabalho",
         text: "Arquivo enviado com sucesso",
-        icon: "success"
+        icon: "success",
+        customClass: {
+            title: 'swal2-title',
+            popup: 'swal2-content'
+          }
       });
 
     resNome.innerHTML = nome.value;
